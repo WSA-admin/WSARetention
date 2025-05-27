@@ -145,6 +145,27 @@ analyzer.print_summary(results_2023, year=2023)
 analyzer.print_summary(results_2024, year=2024)
 ```
 
+### 🔍 Unmatched Members Analysis
+
+If you have unmatched members (common issue), use the improved matching system:
+
+```bash
+# Analyze and improve matching for unmatched members
+python3 analyze_unmatched.py
+
+# Check data quality issues
+python3 check_data_quality.py
+
+# Compare matching between years
+python3 analyze_unmatched.py --compare
+```
+
+**Features:**
+- 🎯 Advanced fuzzy matching algorithms
+- 📊 Detailed analysis of unmatched patterns  
+- 📤 Export for LinkedIn research
+- 🔄 Iterative improvement process
+
 ### Detailed Analysis
 
 ```python
