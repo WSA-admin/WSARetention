@@ -76,12 +76,26 @@ def check_git_tracked_files():
         r'.*Backend-20\d{2}.*'
     ]
     
+    # Safe patterns that are allowed (sample data with fictional content)
+    safe_patterns = [
+        r'data/sample/.*\.csv$'
+    ]
+    
     sensitive_tracked = []
     for file in tracked_files:
-        for pattern in sensitive_patterns:
-            if re.search(pattern, file, re.IGNORECASE):
-                sensitive_tracked.append(file)
+        # Check if file matches any safe pattern first
+        is_safe = False
+        for safe_pattern in safe_patterns:
+            if re.search(safe_pattern, file, re.IGNORECASE):
+                is_safe = True
                 break
+        
+        if not is_safe:
+            # Check if file matches sensitive patterns
+            for pattern in sensitive_patterns:
+                if re.search(pattern, file, re.IGNORECASE):
+                    sensitive_tracked.append(file)
+                    break
     
     if sensitive_tracked:
         print("❌ Sensitive files are being tracked:")
