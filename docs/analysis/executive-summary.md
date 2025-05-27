@@ -22,7 +22,7 @@
 
 ### 1. **Data Quality Challenge Identified & Structured**
 - **38 unmatched members** (down from reported 89)
-- **Root cause**: Personal emails (Gmail) + Dalhousie data issues
+- **Root cause**: Personal emails (Gmail) + data quality issues
 - **Solution ready**: LinkedIn research spreadsheet prepared
 
 ### 2. **Positive Retention Trends Confirmed**
@@ -41,7 +41,7 @@
 
 ### **Immediate (Weeks 1-2)**
 1. **Complete manual research** for 38 unmatched members → [Research Guide](unmatched-members.md)
-2. **Review Dalhousie data quality** (42% of unmatched cases)
+2. **Review PEI institution data quality** (focus on data consistency)
 3. **Contact 15 identified graduates** for transition support
 
 ### **Medium-term (Month 1-2)**
@@ -59,8 +59,7 @@
 ## 📊 Institution Breakdown
 
 ### **Top Unmatched by Institution** *(Immediate Focus Areas)*
-1. **Dalhousie**: 16 unmatched → Data quality review needed
-2. **Cape Breton University**: 11 unmatched → Process standardization  
+**Note**: Analysis now focuses exclusively on PEI institutions (UPEI, Holland College, Collège de l'Île). Nova Scotia institutions (Dalhousie, Cape Breton University) are automatically filtered out.  
 3. **Other institutions**: <5 each → Manageable levels
 
 ### **Retention Success Stories** *(Learn & Replicate)*

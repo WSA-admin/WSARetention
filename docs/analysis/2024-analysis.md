@@ -2,6 +2,8 @@
 
 *Analysis completed: January 2025*
 
+> 📍 **Important Update**: This analysis has been updated to focus exclusively on Prince Edward Island (PEI) students. Students from Nova Scotia institutions (Dalhousie, Cape Breton University, Saint Mary's, etc.) are automatically filtered out during processing to maintain the PEI retention focus.
+
 ## 📊 Executive Summary
 
 The comprehensive analysis of 2024 WSA member registrations reveals **significantly better matching results** than initially reported, with advanced algorithms successfully identifying retention status for the majority of members.
@@ -11,6 +13,7 @@ The comprehensive analysis of 2024 WSA member registrations reveals **significan
 - **Actual Analysis**: Only 41 unmatched members (13% of registrations)
 - **After Improvements**: 38 unmatched members (12% of registrations)
 - **Success Rate**: 88% of 2024 members successfully matched
+- **PEI Focus**: Nova Scotia students automatically excluded from analysis
 
 ## 🎯 Detailed Results
 
@@ -29,17 +32,17 @@ The comprehensive analysis of 2024 WSA member registrations reveals **significan
 
 ## 🔍 Unmatched Members Breakdown
 
-### By Institution
-| Institution | Unmatched Count | Notes |
-|-------------|----------------|--------|
-| **Dalhousie** | 16 | Requires data quality review |
-| **Cape Breton University** | 11 | Second highest |
-| **Saint Mary's University** | 3 | Manageable count |
-| **Dalhousie University** | 3 | Separate from main Dalhousie |
-| **Mount Saint Vincent University** | 3 | Small program |
-| **NSCC** | 2 | Technical programs |
-| **Holland College** | 1 | Excellent match rate |
-| **Acadia University** | 1 | Single case |
+### PEI-Focused Analysis Update
+
+**Note**: This analysis now focuses exclusively on PEI institutions. The previously identified unmatched members from Nova Scotia institutions (Dalhousie: 16, Cape Breton University: 11, Saint Mary's: 3, Mount Saint Vincent: 3, NSCC: 2, Acadia: 1) are automatically filtered out.
+
+**Current PEI Institution Analysis**:
+| Institution | Status | Notes |
+|-------------|--------|--------|
+| **UPEI** | Primary focus | University of Prince Edward Island |
+| **Holland College** | Excellent match rate | Technical and career programs |
+| **Collège de l'Île** | French programs | Prince Edward Island French college |
+| **Maritime Christian College** | Small enrollment | PEI-based institution |
 
 ### By Country of Origin
 | Country | Unmatched Count | Percentage of Unmatched |
@@ -83,11 +86,11 @@ Several unmatched members show strong potential matches requiring manual verific
 
 ### Immediate Actions (Next 2 Weeks)
 1. **Manual LinkedIn Research**: Use exported CSV file to research 38 remaining members
-2. **Data Quality Review**: Focus on Dalhousie institution records (16 unmatched)
+2. **Data Quality Review**: Focus on PEI institution data consistency
 3. **Contact Verification**: Reach out to members with personal email addresses
 
 ### Medium-term Improvements (Next Month)
-1. **Institution Coordination**: Work with Dalhousie to improve data consistency
+1. **Institution Coordination**: Work with PEI institutions to improve data consistency
 2. **Email Standardization**: Encourage use of institutional emails for tracking
 3. **Survey Process**: Update retention survey to include registration emails
 
@@ -107,7 +110,7 @@ Several unmatched members show strong potential matches requiring manual verific
 The decrease in match rate for 2024 is primarily due to:
 1. **Increased use of personal emails** (gmail.com dominates unmatched)
 2. **New institutions** with different naming conventions
-3. **Data entry inconsistencies** particularly at Dalhousie
+3. **Data entry inconsistencies** across different institutions
 
 ## 💼 Business Impact
 
@@ -128,7 +131,7 @@ With 88% match rate, retention statistics are **reliable for strategic decision-
 - [ ] Re-run analysis to verify improvements
 
 ### Phase 2: Data Quality (Week 3-4)
-- [ ] Contact Dalhousie for data consistency review
+- [ ] Contact PEI institutions for data consistency review
 - [ ] Verify institution naming conventions
 - [ ] Implement email validation procedures
 

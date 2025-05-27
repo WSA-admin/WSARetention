@@ -168,8 +168,11 @@ class DataProcessor:
                 'Holland College',
                 'Collège de l\'Île',
                 'College de l\'Ile',
+                'Collège de l\'île',
                 'Maritime Christian College',
-                'PEI Paramedic Academy'
+                'PEI Paramedic Academy',
+                'Prince Edward Island University',
+                'l\'Île College'
             ]
             
             # Create case-insensitive filter

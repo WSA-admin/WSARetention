@@ -52,8 +52,8 @@ Welcome to the comprehensive documentation for the West African Students Associa
 - [x] Data quality assessment and reporting
 
 ### 🔄 In Progress  
-- [ ] Manual LinkedIn research (38 unmatched members)
-- [ ] Dalhousie data quality review
+- [ ] Manual LinkedIn research (PEI students only)
+- [ ] PEI institution data quality optimization
 - [ ] Graduate transition support program design
 
 ### 📋 Planned

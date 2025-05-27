@@ -169,9 +169,9 @@ python3 analyze_unmatched.py --compare
 - 🔄 **Reduced from 41 to 38** unmatched members
 
 **Key Insights from Real Data:**
-- Dalhousie has most unmatched records (needs data quality review)
 - Gmail addresses dominate unmatched cases (personal emails harder to track)
 - Several high-confidence potential matches identified (80%+ similarity)
+- Nova Scotia institutions automatically filtered out (PEI-focused analysis)
 
 ### Detailed Analysis
 
