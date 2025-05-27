@@ -30,10 +30,10 @@
 - **Fewer leaving PEI**: 10.5% vs 15.9% (-5.4%)  
 - **WSA strategies working**: Clear organizational impact
 
-### 3. **Graduate Retention Insight** 🎓
-- **Graduates stay more**: 80.0% vs 75.4% for students
-- **But leave definitively**: 20.0% vs 15.8% (no indecision)
-- **Critical period**: Post-graduation needs targeted support
+### 3. **Graduate Retention Challenge Identified** 🎓
+- **Students outperform graduates**: 80.4% vs 70.9% for graduates (-9.5% gap)
+- **Graduate outmigration higher**: 11.7% vs 9.5% for students
+- **Critical period**: Post-graduation support needed to close retention gap
 
 ---
 
@@ -46,7 +46,7 @@
 
 ### **Medium-term (Month 1-2)**
 1. **Deploy enhanced algorithms** permanently (+3 matches found)
-2. **Implement graduate retention program** 
+2. **Implement graduate support program** - Bridge 9.5% retention gap 
 3. **Standardize email collection** (institutional over personal)
 
 ### **Strategic (Ongoing)**
@@ -71,7 +71,7 @@
 ### **Retention Success Stories** *(Learn & Replicate)*
 - **Overall improvement**: +1.2% retention year-over-year
 - **Outmigration reduction**: -5.4% fewer leaving PEI
-- **Graduate advantage**: +4.6% higher retention than students
+- **Student excellence**: 80.4% retention shows strong performance
 
 ---
 

@@ -198,7 +198,7 @@ analyzer.create_visualizations(breakdown_2024, year=2024)
 
 ### **📈 Latest Results** 
 - **[2024 Analysis Results](docs/analysis/2024-analysis.md)** - Detailed findings (88% match rate, 76.7% retention)
-- **[Graduation Analysis](docs/analysis/graduation-retention.md)** - Graduate vs student patterns (80% vs 75.4%)
+- **[Graduation Analysis](docs/analysis/graduation-retention.md)** - Graduate vs student patterns (70.9% vs 80.4% graduates underperform)
 - **[Unmatched Members](docs/analysis/unmatched-members.md)** - 38 members for manual research
 
 ## Expected Output

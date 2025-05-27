@@ -37,9 +37,9 @@ Welcome to the comprehensive documentation for the West African Students Associa
 | **Unmatched PEI Members** | 1 | **1** | ✅ **Outstanding** |
 
 ### 🎓 Graduation Insights
-- **Graduate Retention**: 80.0% (vs 75.4% for students)
-- **Graduate Outmigration**: 20.0% (decisive departures)
-- **Key Finding**: Post-graduation = critical intervention point
+- **Graduate Retention**: 70.9% vs 80.4% for students (graduates underperform by 9.5%)
+- **Graduate Outmigration**: 11.7% vs 9.5% for students (graduates leave more often)
+- **Key Finding**: Current students consistently outperform graduates - post-graduation support needed
 
 ---
 

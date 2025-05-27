@@ -49,12 +49,12 @@ WSARetention/
 - LinkedIn-ready export formatting
 
 ### **GraduationAnalyzer** (`src/graduation_analyzer.py`)
-**Purpose**: Graduation status classification and analysis  
+**Purpose**: Graduation status classification and analysis using actual student status data  
 **Key Features**:
-- Program duration estimation
-- Graduation timeline calculation  
+- Direct "Student Status" field mapping from registration data
 - Graduate vs student retention comparison
-- Post-graduation trend tracking
+- Year-over-year graduate population analysis
+- Post-graduation intervention insights
 
 ---
 
@@ -150,14 +150,14 @@ threshold = 75  # Username matching confidence
 
 ### **Graduation Classification**
 ```python
-# Program duration mapping + enrollment date analysis
-program_duration = {
-    'bachelor': 4,    # years
-    'master': 2,      # years  
-    'diploma': 1.5,   # years
-    'certificate': 1  # year
-}
-graduation_threshold = duration + 0.5  # 6-month buffer
+# Uses actual "Student Status" field from registration data
+def classify_graduation_status(student_status):
+    if student_status == "Graduate":
+        return "Graduate"
+    elif student_status == "Current Student":
+        return "Current Student"
+    else:
+        return "Unknown"
 ```
 
 ---

@@ -2,160 +2,188 @@
 
 **Analysis Date:** January 2025  
 **Focus:** Retention patterns for Graduates vs Current Students  
-**Methodology:** Program duration analysis + enrollment date classification
+**Methodology:** Using actual "Student Status" field from registration data
 
 ---
 
 ## 🎓 Executive Summary
 
-This analysis reveals **critical differences** in retention patterns between WSA members who have likely graduated versus those still in their studies. The findings provide strategic insights for post-graduation retention efforts.
+This analysis reveals **significant differences** in retention patterns between WSA members who are graduates versus those still in their studies. **Key Discovery**: Current students consistently outperform graduates in retention rates.
 
 ## 📊 Key Findings
 
 ### 2023 Graduation Status Distribution
 | Status | Count | Percentage | Retention Rate |
 |--------|-------|------------|----------------|
-| **Likely Graduate** | 15 | 4.1% | **80.0%** |
-| **Current Student** | 349 | 95.9% | **75.4%** |
+| **Graduate** | 108 | 29.7% | **70.4%** |
+| **Current Student** | 256 | 70.3% | **77.7%** |
 
 ### 2024 Graduation Status Distribution  
 | Status | Count | Percentage | Retention Rate |
 |--------|-------|------------|----------------|
-| **Likely Graduate** | 0 | 0.0% | N/A |
-| **Current Student** | 274 | 99.6% | **76.6%** |
+| **Graduate** | 103 | 38.0% | **70.9%** |
+| **Current Student** | 168 | 62.0% | **80.4%** |
 
 ## 🔍 Critical Insights
 
-### **Graduates Have Higher Retention (2023)**
-- **Graduate Retention**: 80.0% still in PEI
-- **Student Retention**: 75.4% still in PEI  
-- **Advantage**: +4.6% higher retention for graduates
+### **Students Outperform Graduates Consistently**
+- **2023**: Students 77.7% vs Graduates 70.4% (+7.4% advantage)
+- **2024**: Students 80.4% vs Graduates 70.9% (+9.5% advantage)
+- **Trend**: Gap is widening - graduates need targeted support
 
-### **But Graduates Also Leave More Often**
-- **Graduates Leaving**: 20.0% no longer in PEI
-- **Students Leaving**: 15.8% no longer in PEI
-- **Higher Outmigration**: +4.2% more graduates leave
+### **Graduate Outmigration Risk**
+- **2023**: Graduates 17.6% vs Students 15.2% (+2.4% higher outmigration)
+- **2024**: Graduates 11.7% vs Students 9.5% (+2.1% higher outmigration)
+- **Improvement**: Both groups showing major outmigration reduction
 
-### **2024 Shows Improvement for Current Students**
-- **2023 Students**: 75.4% retention
-- **2024 Students**: 76.6% retention  
-- **Improvement**: +1.3% year-over-year
-
-## 🎯 Strategic Implications
-
-### **Post-Graduation Retention Challenge**
-The data reveals a **critical post-graduation period** where:
-- Graduates are more likely to stay in PEI (80% vs 75.4%)
-- BUT when they do leave, they leave definitively (20% vs 15.8%)
-- **Zero inconclusive cases** among graduates (vs 7.4% for students)
-
-### **Program Duration Insights**
-**Likely Graduates Identified (2023):**
-- Business Management (Holland College) - 1.5 year programs
-- Project Management (Holland College) - 1.5 year programs  
-- Data Analytics (Holland College) - 1.5 year programs
-- Post-Graduate Certificates - 1 year programs
+### **Growing Graduate Population**
+- **Graduate representation increased**: 29.7% (2023) → 38.0% (2024)
+- **More recent graduates** joining WSA after program completion
+- **Mature membership**: Higher proportion of completed-program members
 
 ## 📈 Retention Patterns by Graduation Status
 
-### **2023 Detailed Breakdown**
+### **2023 Detailed Breakdown (364 total members)**
 
-#### Likely Graduates (15 members)
-- **Still in PEI**: 12 members (80.0%)
-- **No longer in PEI**: 3 members (20.0%)
-- **Inconclusive**: 0 members (0.0%)
+#### Graduates (108 members)
+- **Still in PEI**: 76 members (70.4%)
+- **No longer in PEI**: 19 members (17.6%)
+- **Inconclusive**: 13 members (12.0%)
 
-#### Current Students (349 members)  
-- **Still in PEI**: 263 members (75.4%)
-- **No longer in PEI**: 55 members (15.8%)
-- **Inconclusive**: 26 members (7.4%)
+#### Current Students (256 members)  
+- **Still in PEI**: 199 members (77.7%)
+- **No longer in PEI**: 39 members (15.2%)
+- **Inconclusive**: 13 members (5.1%)
 
-### **2024 Analysis**
-- **No graduates identified** (all 2024 registrations are recent)
-- **Current students improving**: 76.6% retention (+1.3% from 2023)
+### **2024 Analysis (271 total PEI members)**
 
-## 🚀 Actionable Recommendations
+#### Graduates (103 members)
+- **Still in PEI**: 73 members (70.9%)
+- **No longer in PEI**: 12 members (11.7%)
+- **Inconclusive**: 12 members (11.7%)
 
-### **Immediate Actions (Post-Graduation Focus)**
+#### Current Students (168 members)
+- **Still in PEI**: 135 members (80.4%)
+- **No longer in PEI**: 16 members (9.5%)
+- **Inconclusive**: 15 members (8.9%)
+
+## 🚀 Year-Over-Year Changes
+
+### **Retention Rate Evolution**
+| Group | 2023 | 2024 | Change | Status |
+|-------|------|------|--------|--------|
+| **Graduates** | 70.4% | 70.9% | **+0.5%** | 🔄 Stable |
+| **Current Students** | 77.7% | 80.4% | **+2.6%** | ✅ Improving |
+
+### **Outmigration Improvements**
+| Group | 2023 | 2024 | Change | Status |
+|-------|------|------|--------|--------|
+| **Graduates** | 17.6% | 11.7% | **-5.9%** | ✅ Major improvement |
+| **Current Students** | 15.2% | 9.5% | **-5.7%** | ✅ Major improvement |
+
+## 🎯 Strategic Implications
+
+### **1. Post-Graduation Retention Gap**
+- **Persistent 7-9% gap**: Graduates consistently underperform students
+- **Critical transition period**: Post-graduation is key intervention point
+- **Stable but concerning**: Graduate retention flat while students improve
+
+### **2. Positive System-Wide Trends**
+- **Outmigration success**: Both groups showing 5-6% reduction
+- **WSA strategies working**: Clear organizational impact across populations
+- **Student acceleration**: +2.6% improvement vs +0.5% for graduates
+
+### **3. Population Dynamics**
+- **Growing graduate base**: 29.7% → 38.0% of membership
+- **Recent graduate influx**: More WSA registration after program completion
+- **Strategic importance**: Graduates represent significant membership segment
+
+## 📋 Actionable Recommendations
+
+### **Immediate Actions (Graduate Focus)**
 
 1. **Graduate Transition Support Program**
-   - Target the 15 identified 2023 graduates
+   - Target the 70% retention rate vs 80% for students
    - Provide job placement assistance in PEI
-   - Create alumni networking events
+   - Create graduate-specific networking events
 
-2. **Pre-Graduation Retention Planning**
+2. **Bridge the Retention Gap**
+   - Analyze what makes students successful (80.4% retention)
+   - Adapt student support strategies for graduates
+   - Goal: Bring graduate retention to 75%+ (closing gap)
+
+3. **Post-Graduation Intervention**
    - Identify students approaching graduation (6 months before)
    - Connect with PEI employers early
-   - Offer internship-to-employment pathways
-
-3. **Program-Specific Strategies**
-   - **Holland College Programs**: Focus on 1-2 year diploma graduates
-   - **UPEI Programs**: Monitor 4-year degree students approaching graduation
-   - **Post-Graduate Certificates**: Immediate post-completion support
+   - Create graduation-to-career pathways
 
 ### **Strategic Initiatives**
 
-1. **PEI Career Pathway Program**
-   - Partner with local employers
-   - Create guaranteed interview programs
-   - Develop PEI-specific skill certifications
+1. **Graduate Career Pathway Program**
+   - Partner with local PEI employers
+   - Create guaranteed interview programs for graduates
+   - Develop PEI-specific professional development
 
-2. **Graduate Retention Incentives**
-   - Student loan forgiveness for PEI employment
-   - Housing assistance programs
-   - Professional development opportunities
+2. **Success Pattern Analysis**
+   - Study why students outperform graduates
+   - Identify transferable support strategies
+   - Scale what works for students to graduate population
 
-3. **Alumni Engagement**
-   - Track graduates who stayed vs left
+3. **Alumni Engagement Enhancement**
+   - Connect successful graduates (70%+ who stayed) with recent graduates
+   - Create mentorship programs
    - Success story campaigns
-   - Mentorship programs
 
-## 📊 Program Duration Classification
+## 📊 Institution-Specific Patterns
 
-**Our Analysis Uses:**
-- **Bachelor's Programs**: 4 years (Computer Science, Biology, Psychology, etc.)
-- **Master's Programs**: 2 years (MBA, Master of Education, etc.)
-- **Diploma Programs**: 1.5 years (Project Management, Data Analytics, etc.)
-- **Certificates**: 1 year (Post-baccalaureate programs)
+**Graduate Populations by Institution:**
+- **UPEI Programs**: MBA, Master of Education, Bachelor's degrees
+- **Holland College Programs**: Business Management, Data Analytics, Tourism
+- **Collège de l'Île Programs**: Post-graduate certificates, specialized diplomas
+
+**Support Strategy Customization:**
+- **University graduates**: Research/academic career pathways
+- **College graduates**: Industry-specific job placement
+- **Professional programs**: Certification and networking support
 
 ## 🎯 Success Metrics to Track
 
 ### **Graduate Retention KPIs**
+- **Target**: Increase graduate retention from 70.9% to 75%+ 
 - **6-month post-graduation retention rate**
-- **1-year post-graduation retention rate**  
-- **Employment rate in PEI within 3 months**
-- **Alumni engagement participation**
+- **1-year post-graduation retention rate**
+- **Employment rate in PEI within 3 months of graduation**
 
-### **Current Targets**
-- Maintain 80%+ graduate retention rate
-- Reduce graduate outmigration from 20% to 15%
-- Increase current student retention to 80%+
+### **Student Retention Maintenance**
+- **Maintain**: 80.4%+ current student retention rate
+- **Monitor**: Continue improvement trajectory
+- **Goal**: Reach 85% retention for both populations
 
 ## 📁 Generated Files
 
 1. **`reports/graduation_retention_analysis.csv`** - Detailed member-by-member analysis
 2. **`reports/graduation_retention_analysis.json`** - Technical analysis data
-3. **This summary document** - Strategic findings and recommendations
+3. **`GRADUATE_vs_STUDENT_BREAKDOWN.md`** - Detailed comparative analysis
 
 ---
 
 ## 🔄 Next Steps
 
-### **Phase 1: Validate Graduates (Week 1-2)**
-- Manual verification of 15 identified graduates
-- Contact for current status confirmation
-- Update graduation classification accuracy
-
-### **Phase 2: Program Development (Month 1)**
+### **Phase 1: Graduate Support Design (Week 1-2)**
 - Design graduate transition support program
-- Partner with PEI employers
+- Partner with PEI career services
 - Create pre-graduation intervention points
 
-### **Phase 3: Implementation (Month 2-3)**
+### **Phase 2: Implementation (Month 1)**
 - Launch pilot graduate retention program
-- Track early indicators
+- Track early indicators and success metrics
+- Connect graduates with successful alumni
+
+### **Phase 3: Optimization (Month 2-3)**
 - Refine based on initial results
+- Scale successful interventions
+- Monitor retention gap closure
 
 ---
 
-*This analysis demonstrates that while graduates have higher retention rates, they represent a critical intervention point requiring targeted post-graduation support to prevent the 20% who do leave PEI.* 
+*This analysis demonstrates that while graduates represent a significant and growing portion of WSA membership (38% in 2024), they consistently underperform current students in retention rates, requiring targeted post-graduation support to close the 9.5% retention gap.* 

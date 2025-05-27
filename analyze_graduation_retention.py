@@ -102,7 +102,7 @@ def display_yoy_comparison(comparison):
         print()
         
         # Summary insights
-        grad_change = changes.get('Likely Graduate', {}).get('retention_change', 0)
+        grad_change = changes.get('Graduate', {}).get('retention_change', 0)
         student_change = changes.get('Current Student', {}).get('retention_change', 0)
         
         print("Summary Insights:")

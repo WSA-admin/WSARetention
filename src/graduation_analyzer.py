@@ -61,44 +61,33 @@ class GraduationAnalyzer:
             'post-baccalaureate': 1,
         }
         
-    def classify_graduation_status(self, program: str, enrollment_date: str, analysis_date: str = None) -> str:
+    def classify_graduation_status(self, student_status: str, program: str = None, enrollment_date: str = None, analysis_date: str = None) -> str:
         """
-        Classify if a member has likely graduated based on program and enrollment date.
+        Classify graduation status using the actual Student Status field from raw data.
         
         Args:
-            program (str): Program of study
-            enrollment_date (str): Date of enrollment
-            analysis_date (str): Date of analysis (default: today)
+            student_status (str): Actual "Student Status" field from registration data
+            program (str): Program of study (kept for compatibility, not used)
+            enrollment_date (str): Date of enrollment (kept for compatibility, not used)
+            analysis_date (str): Date of analysis (kept for compatibility, not used)
             
         Returns:
-            str: 'Likely Graduate', 'Current Student', or 'Unknown'
+            str: 'Graduate', 'Current Student', or 'Unknown'
         """
-        if pd.isna(program) or pd.isna(enrollment_date):
+        if pd.isna(student_status) or student_status == "":
             return 'Unknown'
         
-        try:
-            enroll_date = pd.to_datetime(enrollment_date)
-            if analysis_date:
-                current_date = pd.to_datetime(analysis_date)
-            else:
-                current_date = datetime.now()
-            
-            years_since_enrollment = (current_date - enroll_date).days / 365.25
-            
-            # Estimate program duration
-            program_lower = program.lower()
-            estimated_duration = self._estimate_program_duration(program_lower)
-            
-            # Add 6 months buffer for completion
-            graduation_threshold = estimated_duration + 0.5
-            
-            if years_since_enrollment >= graduation_threshold:
-                return 'Likely Graduate'
-            else:
-                return 'Current Student'
-                
-        except Exception as e:
-            logger.warning(f"Error classifying graduation status: {e}")
+        # Clean and standardize the student status
+        status_clean = str(student_status).strip().lower()
+        
+        # Map actual student status values
+        if status_clean in ['graduate', 'graduated']:
+            return 'Graduate'
+        elif status_clean in ['current student', 'student', 'current']:
+            return 'Current Student'
+        else:
+            # Log unexpected values for debugging
+            logger.warning(f"Unexpected student status value: '{student_status}'")
             return 'Unknown'
     
     def _estimate_program_duration(self, program_lower: str) -> float:
@@ -138,6 +127,7 @@ class GraduationAnalyzer:
         # Add graduation classification
         matched_only['graduation_status'] = matched_only.apply(
             lambda row: self.classify_graduation_status(
+                row['Student Status'], 
                 row['Program of Study'], 
                 row['Date of Enrollment']
             ), axis=1
@@ -146,7 +136,7 @@ class GraduationAnalyzer:
         # Analyze by graduation status
         graduation_analysis = {}
         
-        for grad_status in ['Likely Graduate', 'Current Student', 'Unknown']:
+        for grad_status in ['Graduate', 'Current Student', 'Unknown']:
             subset = matched_only[matched_only['graduation_status'] == grad_status]
             
             if len(subset) > 0:
@@ -173,7 +163,7 @@ class GraduationAnalyzer:
             'year': year,
             'total_analyzed': total_analyzed,
             'graduation_distribution': {
-                'Likely Graduate': len(matched_only[matched_only['graduation_status'] == 'Likely Graduate']),
+                'Graduate': len(matched_only[matched_only['graduation_status'] == 'Graduate']),
                 'Current Student': len(matched_only[matched_only['graduation_status'] == 'Current Student']),
                 'Unknown': len(matched_only[matched_only['graduation_status'] == 'Unknown'])
             },
@@ -187,8 +177,8 @@ class GraduationAnalyzer:
         """Generate key insights from graduation analysis."""
         insights = []
         
-        if 'Likely Graduate' in analysis and 'Current Student' in analysis:
-            grad_retention = analysis['Likely Graduate']['retention_percentages']['Still in PEI']
+        if 'Graduate' in analysis and 'Current Student' in analysis:
+            grad_retention = analysis['Graduate']['retention_percentages']['Still in PEI']
             student_retention = analysis['Current Student']['retention_percentages']['Still in PEI']
             
             if grad_retention > student_retention:
@@ -198,7 +188,7 @@ class GraduationAnalyzer:
                 diff = student_retention - grad_retention
                 insights.append(f"Current students have higher retention rate: {student_retention:.1f}% vs {grad_retention:.1f}% (+{diff:.1f}%)")
             
-            grad_leaving = analysis['Likely Graduate']['retention_percentages']['No longer in PEI']
+            grad_leaving = analysis['Graduate']['retention_percentages']['No longer in PEI']
             student_leaving = analysis['Current Student']['retention_percentages']['No longer in PEI']
             
             if grad_leaving > student_leaving:
@@ -229,7 +219,7 @@ class GraduationAnalyzer:
         """Calculate year-over-year changes in graduation retention."""
         changes = {}
         
-        for grad_status in ['Likely Graduate', 'Current Student']:
+        for grad_status in ['Graduate', 'Current Student']:
             if grad_status in analysis_2023['by_graduation_status'] and grad_status in analysis_2024['by_graduation_status']:
                 retention_2023 = analysis_2023['by_graduation_status'][grad_status]['retention_percentages']['Still in PEI']
                 retention_2024 = analysis_2024['by_graduation_status'][grad_status]['retention_percentages']['Still in PEI']
@@ -255,6 +245,7 @@ class GraduationAnalyzer:
         for df, year in [(matched_2023, 2023), (matched_2024, 2024)]:
             df['graduation_status'] = df.apply(
                 lambda row: self.classify_graduation_status(
+                    row['Student Status'], 
                     row['Program of Study'], 
                     row['Date of Enrollment']
                 ), axis=1
