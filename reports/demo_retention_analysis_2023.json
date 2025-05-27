@@ -1,0 +1,289 @@
+{
+  "year": 2023,
+  "analysis_date": "2025-05-27T15:09:58.286479",
+  "summary": {
+    "total_registered_members": 15,
+    "members_with_retention_data": 15,
+    "match_rate_percent": 100.0,
+    "still_in_pei": "8",
+    "no_longer_in_pei": "4",
+    "inconclusive": "3",
+    "unknown": 0,
+    "still_in_pei_percent": 53.333333333333336,
+    "no_longer_in_pei_percent": 26.666666666666668,
+    "inconclusive_percent": 20.0
+  },
+  "institution_breakdown": {
+    "UPEI": {
+      "total_members": 8,
+      "matched_members": 8,
+      "still_in_pei": "6",
+      "no_longer_in_pei": "1",
+      "inconclusive": "1",
+      "still_in_pei_percent": 75.0,
+      "retention_rate": 75.0
+    },
+    "Holland College": {
+      "total_members": 5,
+      "matched_members": 5,
+      "still_in_pei": "1",
+      "no_longer_in_pei": "3",
+      "inconclusive": "1",
+      "still_in_pei_percent": 20.0,
+      "retention_rate": 20.0
+    },
+    "Coll\u00e8ge de l'\u00cele": {
+      "total_members": 2,
+      "matched_members": 2,
+      "still_in_pei": "1",
+      "no_longer_in_pei": 0,
+      "inconclusive": "1",
+      "still_in_pei_percent": 50.0,
+      "retention_rate": 50.0
+    }
+  },
+  "program_breakdown": {},
+  "country_breakdown": {
+    "Canada": {
+      "total_members": 3,
+      "matched_members": 3,
+      "still_in_pei": "3",
+      "no_longer_in_pei": 0,
+      "inconclusive": 0,
+      "retention_rate": 100.0
+    }
+  },
+  "match_quality": {
+    "total_matches": 15,
+    "match_type_breakdown": {
+      "Email": 15
+    },
+    "average_confidence": 100.0,
+    "high_confidence_matches": 15,
+    "medium_confidence_matches": 0,
+    "low_confidence_matches": 0
+  },
+  "timeline_analysis": {
+    "monthly_breakdown": {
+      "1": {
+        "total_enrollments": 3,
+        "matched_members": 3,
+        "retention_rate": 33.33333333333333
+      },
+      "2": {
+        "total_enrollments": 3,
+        "matched_members": 3,
+        "retention_rate": 0.0
+      },
+      "3": {
+        "total_enrollments": 3,
+        "matched_members": 3,
+        "retention_rate": 33.33333333333333
+      },
+      "4": {
+        "total_enrollments": 2,
+        "matched_members": 2,
+        "retention_rate": 100.0
+      },
+      "5": {
+        "total_enrollments": 2,
+        "matched_members": 2,
+        "retention_rate": 100.0
+      },
+      "6": {
+        "total_enrollments": 1,
+        "matched_members": 1,
+        "retention_rate": 100.0
+      },
+      "7": {
+        "total_enrollments": 1,
+        "matched_members": 1,
+        "retention_rate": 100.0
+      }
+    },
+    "total_with_dates": 15,
+    "missing_dates": 0
+  },
+  "raw_data_sample": [
+    {
+      "Name": "John Doe",
+      "Email": "john.doe@email.com",
+      "Date of Enrollment": "2023-01-15",
+      "Institution of Study": "UPEI",
+      "Program of Study": "Computer Science",
+      "Province": "Prince-Edward-Island",
+      "Country of Origin": "Canada",
+      "Languages": "English",
+      "Education Level": "Bachelor's",
+      "Age Range": "22-25",
+      "name_clean": "john doe",
+      "email_clean": "john.doe@email.com",
+      "enrollment_date": "2023-01-15 00:00:00",
+      "retention_status": "Still in PEI",
+      "match_type": "Email",
+      "match_confidence": 100
+    },
+    {
+      "Name": "Jane Smith",
+      "Email": "jane.smith@email.com",
+      "Date of Enrollment": "2023-02-20",
+      "Institution of Study": "Holland College",
+      "Program of Study": "Business Administration",
+      "Province": "Prince-Edward-Island",
+      "Country of Origin": "India",
+      "Languages": "English/Hindi",
+      "Education Level": "Diploma",
+      "Age Range": "26-30",
+      "name_clean": "jane smith",
+      "email_clean": "jane.smith@email.com",
+      "enrollment_date": "2023-02-20 00:00:00",
+      "retention_status": "No longer in PEI",
+      "match_type": "Email",
+      "match_confidence": 100
+    },
+    {
+      "Name": "Alex Wilson",
+      "Email": "alex.wilson@email.com",
+      "Date of Enrollment": "2023-03-10",
+      "Institution of Study": "UPEI",
+      "Program of Study": "Engineering",
+      "Province": "Prince-Edward-Island",
+      "Country of Origin": "Nigeria",
+      "Languages": "English",
+      "Education Level": "Bachelor's",
+      "Age Range": "18-21",
+      "name_clean": "alex wilson",
+      "email_clean": "alex.wilson@email.com",
+      "enrollment_date": "2023-03-10 00:00:00",
+      "retention_status": "Still in PEI",
+      "match_type": "Email",
+      "match_confidence": 100
+    },
+    {
+      "Name": "Sarah Brown",
+      "Email": "sarah.brown@email.com",
+      "Date of Enrollment": "2023-01-25",
+      "Institution of Study": "Coll\u00e8ge de l'\u00cele",
+      "Program of Study": "Nursing",
+      "Province": "Prince-Edward-Island",
+      "Country of Origin": "France",
+      "Languages": "French/English",
+      "Education Level": "Bachelor's",
+      "Age Range": "22-25",
+      "name_clean": "sarah brown",
+      "email_clean": "sarah.brown@email.com",
+      "enrollment_date": "2023-01-25 00:00:00",
+      "retention_status": "Inconclusive",
+      "match_type": "Email",
+      "match_confidence": 100
+    },
+    {
+      "Name": "Mike Johnson",
+      "Email": "mike.johnson@email.com",
+      "Date of Enrollment": "2023-04-05",
+      "Institution of Study": "UPEI",
+      "Program of Study": "Business",
+      "Province": "Prince-Edward-Island",
+      "Country of Origin": "Canada",
+      "Languages": "English",
+      "Education Level": "Master's",
+      "Age Range": "26-30",
+      "name_clean": "mike johnson",
+      "email_clean": "mike.johnson@email.com",
+      "enrollment_date": "2023-04-05 00:00:00",
+      "retention_status": "Still in PEI",
+      "match_type": "Email",
+      "match_confidence": 100
+    },
+    {
+      "Name": "Lisa Taylor",
+      "Email": "lisa.taylor@email.com",
+      "Date of Enrollment": "2023-02-14",
+      "Institution of Study": "Holland College",
+      "Program of Study": "Culinary Arts",
+      "Province": "Prince-Edward-Island",
+      "Country of Origin": "Philippines",
+      "Languages": "English/Tagalog",
+      "Education Level": "Diploma",
+      "Age Range": "18-21",
+      "name_clean": "lisa taylor",
+      "email_clean": "lisa.taylor@email.com",
+      "enrollment_date": "2023-02-14 00:00:00",
+      "retention_status": "No longer in PEI",
+      "match_type": "Email",
+      "match_confidence": 100
+    },
+    {
+      "Name": "David Anderson",
+      "Email": "david.anderson@email.com",
+      "Date of Enrollment": "2023-05-12",
+      "Institution of Study": "UPEI",
+      "Program of Study": "Medicine",
+      "Province": "Prince-Edward-Island",
+      "Country of Origin": "Ghana",
+      "Languages": "English",
+      "Education Level": "Doctorate",
+      "Age Range": "22-25",
+      "name_clean": "david anderson",
+      "email_clean": "david.anderson@email.com",
+      "enrollment_date": "2023-05-12 00:00:00",
+      "retention_status": "Still in PEI",
+      "match_type": "Email",
+      "match_confidence": 100
+    },
+    {
+      "Name": "Emma Martin",
+      "Email": "emma.martin@email.com",
+      "Date of Enrollment": "2023-03-08",
+      "Institution of Study": "Holland College",
+      "Program of Study": "Graphic Design",
+      "Province": "Prince-Edward-Island",
+      "Country of Origin": "Bangladesh",
+      "Languages": "English/Bengali",
+      "Education Level": "Certificate",
+      "Age Range": "18-21",
+      "name_clean": "emma martin",
+      "email_clean": "emma.martin@email.com",
+      "enrollment_date": "2023-03-08 00:00:00",
+      "retention_status": "Inconclusive",
+      "match_type": "Email",
+      "match_confidence": 100
+    },
+    {
+      "Name": "Chris Lee",
+      "Email": "chris.lee@email.com",
+      "Date of Enrollment": "2023-06-20",
+      "Institution of Study": "UPEI",
+      "Program of Study": "Psychology",
+      "Province": "Prince-Edward-Island",
+      "Country of Origin": "South Korea",
+      "Languages": "English/Korean",
+      "Education Level": "Bachelor's",
+      "Age Range": "22-25",
+      "name_clean": "chris lee",
+      "email_clean": "chris.lee@email.com",
+      "enrollment_date": "2023-06-20 00:00:00",
+      "retention_status": "Still in PEI",
+      "match_type": "Email",
+      "match_confidence": 100
+    },
+    {
+      "Name": "Amy Garcia",
+      "Email": "amy.garcia@email.com",
+      "Date of Enrollment": "2023-01-30",
+      "Institution of Study": "Holland College",
+      "Program of Study": "Healthcare",
+      "Province": "Prince-Edward-Island",
+      "Country of Origin": "Mexico",
+      "Languages": "English/Spanish",
+      "Education Level": "Diploma",
+      "Age Range": "26-30",
+      "name_clean": "amy garcia",
+      "email_clean": "amy.garcia@email.com",
+      "enrollment_date": "2023-01-30 00:00:00",
+      "retention_status": "No longer in PEI",
+      "match_type": "Email",
+      "match_confidence": 100
+    }
+  ]
+}

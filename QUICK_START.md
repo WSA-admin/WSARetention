@@ -65,7 +65,8 @@ After running the analysis, check:
 
 1. **Console Output**: Summary statistics and key findings
 2. **Reports Directory**: Detailed JSON files with complete analysis
-3. **ANALYSIS_SUMMARY.md**: Executive summary with insights
+3. **[Executive Summary](docs/analysis/executive-summary.md)**: Key findings and strategic insights
+4. **[Complete Documentation](docs/README.md)**: Full documentation hub
 
 ## Understanding the Results
 
@@ -115,8 +116,9 @@ RETENTION BREAKDOWN:
 ### Getting Help
 
 1. Check the full README.md for detailed documentation
-2. Review the ANALYSIS_SUMMARY.md for interpretation guidance
-3. Examine the JSON files in `reports/` for raw data
+2. Review the [Executive Summary](docs/analysis/executive-summary.md) for interpretation guidance
+3. Browse the [Complete Documentation](docs/README.md) for all guides and resources
+4. Examine the JSON files in `reports/` for raw data
 
 ## Next Steps
 
@@ -138,7 +140,7 @@ python3 run_analysis.py
 
 # Check results
 ls reports/
-cat ANALYSIS_SUMMARY.md
+cat docs/analysis/executive-summary.md
 ```
 
 That's it! You should now have comprehensive retention analysis results. 

@@ -187,9 +187,17 @@ analyzer.create_visualizations(breakdown_2023, year=2023)
 analyzer.create_visualizations(breakdown_2024, year=2024)
 ```
 
-## Real Analysis Results
+## 📊 Analysis Results & Documentation
 
-📊 **[View Complete 2024 Analysis Results](ANALYSIS_RESULTS_2024.md)** - Comprehensive findings from real WSA data
+### **🚀 Quick Start**
+- **[Executive Summary](docs/analysis/executive-summary.md)** - Key findings and strategic insights
+- **[Complete Documentation](docs/README.md)** - Full documentation hub with navigation
+- **[Quick Start Guide](QUICK_START.md)** - Get running in 5 minutes
+
+### **📈 Latest Results** 
+- **[2024 Analysis Results](docs/analysis/2024-analysis.md)** - Detailed findings (88% match rate, 76.7% retention)
+- **[Graduation Analysis](docs/analysis/graduation-retention.md)** - Graduate vs student patterns (80% vs 75.4%)
+- **[Unmatched Members](docs/analysis/unmatched-members.md)** - 38 members for manual research
 
 ## Expected Output
 

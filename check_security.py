@@ -78,7 +78,8 @@ def check_git_tracked_files():
     
     # Safe patterns that are allowed (sample data with fictional content)
     safe_patterns = [
-        r'data/sample/.*\.csv$'
+        r'data/sample/.*\.csv$',
+        r'reports/demo_.*\.json$'
     ]
     
     sensitive_tracked = []

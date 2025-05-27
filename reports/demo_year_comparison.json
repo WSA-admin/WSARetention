@@ -1,0 +1,58 @@
+{
+  "comparison_date": "2025-05-27T15:09:58.295595",
+  "summary_comparison": {
+    "2023": {
+      "total_registered_members": 15,
+      "members_with_retention_data": 15,
+      "match_rate_percent": 100.0,
+      "still_in_pei": "8",
+      "no_longer_in_pei": "4",
+      "inconclusive": "3",
+      "unknown": 0,
+      "still_in_pei_percent": 53.333333333333336,
+      "no_longer_in_pei_percent": 26.666666666666668,
+      "inconclusive_percent": 20.0
+    },
+    "2024": {
+      "total_registered_members": 11,
+      "members_with_retention_data": 11,
+      "match_rate_percent": 100.0,
+      "still_in_pei": "8",
+      "no_longer_in_pei": "1",
+      "inconclusive": "2",
+      "unknown": 0,
+      "still_in_pei_percent": 72.72727272727273,
+      "no_longer_in_pei_percent": 9.090909090909092,
+      "inconclusive_percent": 18.181818181818183
+    },
+    "changes": {
+      "total_members_change": -4,
+      "retention_rate_change": 19.393939393939398,
+      "match_rate_change": 0.0
+    }
+  },
+  "institution_comparison": {
+    "Holland College": {
+      "2023_retention_rate": 20.0,
+      "2024_retention_rate": 50.0,
+      "change": 30.0
+    },
+    "UPEI": {
+      "2023_retention_rate": 75.0,
+      "2024_retention_rate": 75.0,
+      "change": 0.0
+    },
+    "Coll\u00e8ge de l'\u00cele": {
+      "2023_retention_rate": 50.0,
+      "2024_retention_rate": 100.0,
+      "change": 50.0
+    }
+  },
+  "country_comparison": {
+    "Canada": {
+      "2023_retention_rate": 100.0,
+      "2024_retention_rate": 100.0,
+      "change": 0.0
+    }
+  }
+}
