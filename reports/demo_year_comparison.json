@@ -1,5 +1,5 @@
 {
-  "comparison_date": "2025-05-27T15:09:58.295595",
+  "comparison_date": "2025-05-27T15:18:04.294768",
   "summary_comparison": {
     "2023": {
       "total_registered_members": 15,
@@ -32,15 +32,15 @@
     }
   },
   "institution_comparison": {
-    "Holland College": {
-      "2023_retention_rate": 20.0,
-      "2024_retention_rate": 50.0,
-      "change": 30.0
-    },
     "UPEI": {
       "2023_retention_rate": 75.0,
       "2024_retention_rate": 75.0,
       "change": 0.0
+    },
+    "Holland College": {
+      "2023_retention_rate": 20.0,
+      "2024_retention_rate": 50.0,
+      "change": 30.0
     },
     "Coll\u00e8ge de l'\u00cele": {
       "2023_retention_rate": 50.0,

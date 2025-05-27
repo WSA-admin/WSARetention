@@ -126,6 +126,65 @@ class DataProcessor:
         
         return email
     
+    def filter_pei_students(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Filter registrations to include only students from PEI institutions/province.
+        
+        Args:
+            df (pd.DataFrame): Registration DataFrame
+            
+        Returns:
+            pd.DataFrame: Filtered DataFrame with only PEI students
+        """
+        if df is None or df.empty:
+            return df
+        
+        # Check if Province column exists
+        if 'Province' in df.columns:
+            # Filter for Prince Edward Island variations
+            pei_variations = [
+                'Prince Edward Island',
+                'Prince-Edward-Island', 
+                'PEI',
+                'P.E.I.',
+                'Prince Edward Island, Canada',
+                'PE'
+            ]
+            
+            # Create case-insensitive filter
+            pei_mask = df['Province'].str.lower().str.strip().isin([var.lower() for var in pei_variations])
+            original_count = len(df)
+            df_filtered = df[pei_mask].copy()
+            filtered_count = len(df_filtered)
+            
+            logger.info(f"Province filtering: {original_count} -> {filtered_count} records (removed {original_count - filtered_count} non-PEI students)")
+            return df_filtered
+        
+        # If no Province column, check Institution of Study for PEI institutions
+        elif 'Institution of Study' in df.columns:
+            pei_institutions = [
+                'UPEI',
+                'University of Prince Edward Island',
+                'Holland College',
+                'Collège de l\'Île',
+                'College de l\'Ile',
+                'Maritime Christian College',
+                'PEI Paramedic Academy'
+            ]
+            
+            # Create case-insensitive filter
+            institution_mask = df['Institution of Study'].str.lower().str.strip().isin([inst.lower() for inst in pei_institutions])
+            original_count = len(df)
+            df_filtered = df[institution_mask].copy()
+            filtered_count = len(df_filtered)
+            
+            logger.info(f"Institution filtering: {original_count} -> {filtered_count} records (removed {original_count - filtered_count} non-PEI institution students)")
+            return df_filtered
+        
+        else:
+            logger.warning("No Province or Institution of Study column found - cannot filter for PEI students")
+            return df
+
     def preprocess_data(self) -> Dict[str, pd.DataFrame]:
         """
         Clean and preprocess all datasets.
@@ -138,19 +197,26 @@ class DataProcessor:
         if self.retention_survey is None:
             self.load_data()
         
+        # Filter for PEI students only
+        logger.info("Filtering for PEI students only...")
+        self.registrations_2023 = self.filter_pei_students(self.registrations_2023)
+        self.registrations_2024 = self.filter_pei_students(self.registrations_2024)
+        
         # Clean retention survey data
         self.retention_survey['name_clean'] = self.retention_survey['Name'].apply(self.clean_names)
         self.retention_survey['email_clean'] = self.retention_survey['Email Address'].apply(self.clean_emails)
         
         # Clean 2023 registrations
-        self.registrations_2023['name_clean'] = self.registrations_2023['Name'].apply(self.clean_names)
-        self.registrations_2023['email_clean'] = self.registrations_2023['Email'].apply(self.clean_emails)
-        self.registrations_2023['enrollment_date'] = pd.to_datetime(self.registrations_2023['Date of Enrollment'], errors='coerce')
+        if self.registrations_2023 is not None and not self.registrations_2023.empty:
+            self.registrations_2023['name_clean'] = self.registrations_2023['Name'].apply(self.clean_names)
+            self.registrations_2023['email_clean'] = self.registrations_2023['Email'].apply(self.clean_emails)
+            self.registrations_2023['enrollment_date'] = pd.to_datetime(self.registrations_2023['Date of Enrollment'], errors='coerce')
         
         # Clean 2024 registrations
-        self.registrations_2024['name_clean'] = self.registrations_2024['Name'].apply(self.clean_names)
-        self.registrations_2024['email_clean'] = self.registrations_2024['Email'].apply(self.clean_emails)
-        self.registrations_2024['enrollment_date'] = pd.to_datetime(self.registrations_2024['Date of Enrollment'], errors='coerce')
+        if self.registrations_2024 is not None and not self.registrations_2024.empty:
+            self.registrations_2024['name_clean'] = self.registrations_2024['Name'].apply(self.clean_names)
+            self.registrations_2024['email_clean'] = self.registrations_2024['Email'].apply(self.clean_emails)
+            self.registrations_2024['enrollment_date'] = pd.to_datetime(self.registrations_2024['Date of Enrollment'], errors='coerce')
         
         logger.info("Data preprocessing completed")
         

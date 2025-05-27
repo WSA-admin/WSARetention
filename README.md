@@ -36,8 +36,10 @@ The project uses three main CSV files:
 - **Date of Enrollment**: When they registered
 - **Institution of Study**: UPEI, Holland College, Collège de l'Île
 - **Program of Study**: Academic program
-- **Province**: Location (Prince-Edward-Island)
+- **Province**: Location (Prince-Edward-Island) - **Note: Only PEI students are analyzed**
 - **Other demographic data**: Country of origin, languages, education level, etc.
+
+> 📍 **PEI Focus**: This analysis specifically tracks retention within Prince Edward Island. Students from other provinces (e.g., Nova Scotia) are automatically filtered out during processing to maintain focus on PEI-based outcomes.
 
 ## Technology Stack
 
@@ -227,6 +229,8 @@ The analysis will provide:
 - **Automated Name Matching**: Handles variations in name formatting
 - **Email Cross-referencing**: Uses email addresses for verification
 - **Data Validation**: Checks for inconsistencies and missing data
+- **PEI-Focused Analysis**: Automatically filters to include only Prince Edward Island students
+- **Province/Institution Filtering**: Excludes Nova Scotia and other non-PEI institutions
 - **Flexible Reporting**: Generate reports for different time periods
 - **Interactive Visualizations**: Charts and graphs for easy interpretation
 - **Reusable Framework**: Easy to extend for future years

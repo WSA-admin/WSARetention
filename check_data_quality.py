@@ -179,6 +179,41 @@ def main():
                 print(f"\n   ⚠️  Potential duplicate institutions:")
                 for dup1, dup2 in potential_dups:
                     print(f"      '{dup1}' vs '{dup2}'")
+            
+            # Check province distribution and non-PEI students
+            print(f"\n📍 Province/Location Analysis:")
+            if 'Province' in reg_df.columns:
+                province_counts = reg_df['Province'].value_counts(dropna=False)
+                print(f"   Province Distribution:")
+                for province, count in province_counts.items():
+                    if pd.isna(province):
+                        print(f"      Missing/Unknown: {count}")
+                    else:
+                        print(f"      {province}: {count}")
+                
+                # Highlight non-PEI students
+                pei_variations = [
+                    'Prince Edward Island', 'Prince-Edward-Island', 'PEI', 
+                    'P.E.I.', 'Prince Edward Island, Canada', 'PE'
+                ]
+                non_pei_mask = ~reg_df['Province'].str.lower().str.strip().isin([var.lower() for var in pei_variations])
+                non_pei = reg_df[non_pei_mask]
+                
+                if len(non_pei) > 0:
+                    print(f"\n   🚨 NON-PEI STUDENTS FOUND: {len(non_pei)} students")
+                    print(f"      These will be automatically filtered out:")
+                    for province, count in non_pei['Province'].value_counts().items():
+                        print(f"         - {province}: {count} students")
+                    
+                    # Show some examples if not too many
+                    if len(non_pei) <= 10:
+                        print(f"      Example names:")
+                        for _, row in non_pei.head(5).iterrows():
+                            print(f"         - {row.get('Name', 'N/A')} ({row.get('Province', 'N/A')})")
+                else:
+                    print(f"   ✅ All students are from PEI")
+            else:
+                print(f"   ℹ️  No Province column found - filtering by institution only")
         
         # Cross-dataset analysis
         print(f"\n" + "="*60)
@@ -222,7 +257,8 @@ def main():
         print(f"   2. Standardize institution names if duplicates found")
         print(f"   3. Check email format consistency")
         print(f"   4. Consider name standardization before matching")
-        print(f"   5. Run improved matching algorithm: python3 analyze_unmatched.py")
+        print(f"   5. Note: Non-PEI students are automatically filtered out")
+        print(f"   6. Run improved matching algorithm: python3 analyze_unmatched.py")
         
     except FileNotFoundError as e:
         print(f"❌ Data file not found: {e}")
