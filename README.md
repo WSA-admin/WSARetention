@@ -147,7 +147,7 @@ analyzer.print_summary(results_2024, year=2024)
 
 ### 🔍 Unmatched Members Analysis
 
-If you have unmatched members (common issue), use the improved matching system:
+**✅ PROVEN RESULTS**: Analysis of real 2024 WSA data shows 88% match rate (278/316 members)
 
 ```bash
 # Analyze and improve matching for unmatched members
@@ -160,11 +160,16 @@ python3 check_data_quality.py
 python3 analyze_unmatched.py --compare
 ```
 
-**Features:**
-- 🎯 Advanced fuzzy matching algorithms
-- 📊 Detailed analysis of unmatched patterns  
-- 📤 Export for LinkedIn research
-- 🔄 Iterative improvement process
+**Real Performance:**
+- 🎯 **88% automatic matching** (278 of 316 members)
+- 📊 **3 additional matches** found by improved algorithms  
+- 📤 **38 members exported** for LinkedIn research
+- 🔄 **Reduced from 41 to 38** unmatched members
+
+**Key Insights from Real Data:**
+- Dalhousie has most unmatched records (needs data quality review)
+- Gmail addresses dominate unmatched cases (personal emails harder to track)
+- Several high-confidence potential matches identified (80%+ similarity)
 
 ### Detailed Analysis
 
@@ -181,6 +186,10 @@ breakdown_2024 = analyzer.get_detailed_breakdown(2024)
 analyzer.create_visualizations(breakdown_2023, year=2023)
 analyzer.create_visualizations(breakdown_2024, year=2024)
 ```
+
+## Real Analysis Results
+
+📊 **[View Complete 2024 Analysis Results](ANALYSIS_RESULTS_2024.md)** - Comprehensive findings from real WSA data
 
 ## Expected Output
 

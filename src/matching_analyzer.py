@@ -121,7 +121,8 @@ class MatchingAnalyzer:
                     # Try first + last name combinations
                     first_last = f"{name_parts[0]} {name_parts[-1]}"
                     partial_matches = process.extract(first_last, survey_data['name_clean'], limit=3)
-                    for match, score in partial_matches:
+                    for match_result in partial_matches:
+                        match, score = match_result[0], match_result[1]
                         if score >= 70:
                             survey_row = survey_data[survey_data['name_clean'] == match].iloc[0]
                             matches.append({
@@ -158,7 +159,8 @@ class MatchingAnalyzer:
                 name_variants = self._generate_name_variants(name)
                 for variant in name_variants:
                     variant_matches = process.extract(variant, survey_data['name_clean'], limit=2)
-                    for match, score in variant_matches:
+                    for match_result in variant_matches:
+                        match, score = match_result[0], match_result[1]
                         if score >= 80:
                             survey_row = survey_data[survey_data['name_clean'] == match].iloc[0]
                             matches.append({
@@ -271,7 +273,8 @@ class MatchingAnalyzer:
                 if len(name_parts) >= 2:
                     first_last = f"{name_parts[0]} {name_parts[-1]}"
                     name_matches = process.extract(first_last, survey_data['name_clean'], limit=3)
-                    for match_name, score in name_matches:
+                    for match_result in name_matches:
+                        match_name, score = match_result[0], match_result[1]
                         if score >= confidence_threshold:
                             best_match = match_name
                             best_score = score
