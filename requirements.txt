@@ -1,0 +1,41 @@
+# Core data analysis libraries
+pandas>=1.5.0
+numpy>=1.24.0
+
+# Data visualization
+matplotlib>=3.6.0
+seaborn>=0.12.0
+plotly>=5.17.0
+
+# Excel file handling
+openpyxl>=3.1.0
+xlsxwriter>=3.1.0
+
+# Jupyter notebooks (optional for interactive analysis)
+jupyter>=1.0.0
+ipython>=8.0.0
+
+# String matching for name comparison
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.21.0
+
+# Data validation and cleaning
+email-validator>=2.0.0
+
+# Progress bars for long operations
+tqdm>=4.65.0
+
+# Scientific computing
+scipy>=1.10.0
+
+# Date and time handling
+python-dateutil>=2.8.0
+
+# Configuration file handling
+pyyaml>=6.0
+
+# HTML report generation
+jinja2>=3.1.0
+
+# Statistical analysis
+statsmodels>=0.14.0 
