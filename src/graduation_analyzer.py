@@ -122,7 +122,9 @@ class GraduationAnalyzer:
         
         # Get matched data
         matched_data = self.data_processor.match_members(year)
-        matched_only = matched_data[matched_data['retention_status'] != 'Unknown'].copy()
+        # Filter for only valid retention statuses
+        valid_retention_statuses = ['Still in PEI', 'No longer in PEI', 'Inconclusive']
+        matched_only = matched_data[matched_data['retention_status'].isin(valid_retention_statuses)].copy()
         
         # Add graduation classification
         matched_only['graduation_status'] = matched_only.apply(
@@ -254,7 +256,9 @@ class GraduationAnalyzer:
         
         # Combine and export
         combined = pd.concat([matched_2023, matched_2024], ignore_index=True)
-        combined = combined[combined['retention_status'] != 'Unknown']  # Only matched records
+        # Filter for only valid retention statuses
+        valid_retention_statuses = ['Still in PEI', 'No longer in PEI', 'Inconclusive']
+        combined = combined[combined['retention_status'].isin(valid_retention_statuses)]
         
         # Select relevant columns
         export_columns = [

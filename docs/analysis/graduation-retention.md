@@ -15,86 +15,86 @@ This analysis reveals **significant differences** in retention patterns between 
 ### 2023 Graduation Status Distribution
 | Status | Count | Percentage | Retention Rate |
 |--------|-------|------------|----------------|
-| **Graduate** | 108 | 29.7% | **70.4%** |
-| **Current Student** | 256 | 70.3% | **77.7%** |
+| **Graduate** | 108 | 30.1% | **70.4%** |
+| **Current Student** | 251 | 69.9% | **79.3%** |
 
 ### 2024 Graduation Status Distribution  
 | Status | Count | Percentage | Retention Rate |
 |--------|-------|------------|----------------|
-| **Graduate** | 103 | 38.0% | **70.9%** |
-| **Current Student** | 168 | 62.0% | **80.4%** |
+| **Graduate** | 97 | 36.9% | **75.3%** |
+| **Current Student** | 166 | 63.1% | **81.3%** |
 
 ## 🔍 Critical Insights
 
 ### **Students Outperform Graduates Consistently**
-- **2023**: Students 77.7% vs Graduates 70.4% (+7.4% advantage)
-- **2024**: Students 80.4% vs Graduates 70.9% (+9.5% advantage)
-- **Trend**: Gap is widening - graduates need targeted support
+- **2023**: Students 79.3% vs Graduates 70.4% (+8.9% advantage)
+- **2024**: Students 81.3% vs Graduates 75.3% (+6.0% advantage)
+- **Trend**: Gap is narrowing - graduates showing improvement
 
 ### **Graduate Outmigration Risk**
-- **2023**: Graduates 17.6% vs Students 15.2% (+2.4% higher outmigration)
-- **2024**: Graduates 11.7% vs Students 9.5% (+2.1% higher outmigration)
+- **2023**: Graduates 17.6% vs Students 15.5% (+2.1% higher outmigration)
+- **2024**: Graduates 12.4% vs Students 9.6% (+2.8% higher outmigration)
 - **Improvement**: Both groups showing major outmigration reduction
 
 ### **Growing Graduate Population**
-- **Graduate representation increased**: 29.7% (2023) → 38.0% (2024)
+- **Graduate representation**: 29.7% (2023) → 36.9% (2024)
 - **More recent graduates** joining WSA after program completion
 - **Mature membership**: Higher proportion of completed-program members
 
 ## 📈 Retention Patterns by Graduation Status
 
-### **2023 Detailed Breakdown (364 total members)**
+### **2023 Detailed Breakdown (359 total members)**
 
 #### Graduates (108 members)
 - **Still in PEI**: 76 members (70.4%)
 - **No longer in PEI**: 19 members (17.6%)
 - **Inconclusive**: 13 members (12.0%)
 
-#### Current Students (256 members)  
-- **Still in PEI**: 199 members (77.7%)
-- **No longer in PEI**: 39 members (15.2%)
-- **Inconclusive**: 13 members (5.1%)
+#### Current Students (251 members)  
+- **Still in PEI**: 199 members (79.3%)
+- **No longer in PEI**: 39 members (15.5%)
+- **Inconclusive**: 13 members (5.2%)
 
-### **2024 Analysis (271 total PEI members)**
+### **2024 Analysis (263 total PEI members)**
 
-#### Graduates (103 members)
-- **Still in PEI**: 73 members (70.9%)
-- **No longer in PEI**: 12 members (11.7%)
-- **Inconclusive**: 12 members (11.7%)
+#### Graduates (97 members)
+- **Still in PEI**: 73 members (75.3%)
+- **No longer in PEI**: 12 members (12.4%)
+- **Inconclusive**: 12 members (12.4%)
 
-#### Current Students (168 members)
-- **Still in PEI**: 135 members (80.4%)
-- **No longer in PEI**: 16 members (9.5%)
-- **Inconclusive**: 15 members (8.9%)
+#### Current Students (166 members)
+- **Still in PEI**: 135 members (81.3%)
+- **No longer in PEI**: 16 members (9.6%)
+- **Inconclusive**: 15 members (9.0%)
 
 ## 🚀 Year-Over-Year Changes
 
 ### **Retention Rate Evolution**
 | Group | 2023 | 2024 | Change | Status |
 |-------|------|------|--------|--------|
-| **Graduates** | 70.4% | 70.9% | **+0.5%** | 🔄 Stable |
-| **Current Students** | 77.7% | 80.4% | **+2.6%** | ✅ Improving |
+| **Graduates** | 70.4% | 75.3% | **+4.9%** | ✅ Major improvement |
+| **Current Students** | 79.3% | 81.3% | **+2.0%** | ✅ Improving |
 
 ### **Outmigration Improvements**
 | Group | 2023 | 2024 | Change | Status |
 |-------|------|------|--------|--------|
-| **Graduates** | 17.6% | 11.7% | **-5.9%** | ✅ Major improvement |
-| **Current Students** | 15.2% | 9.5% | **-5.7%** | ✅ Major improvement |
+| **Graduates** | 17.6% | 12.4% | **-5.2%** | ✅ Major improvement |
+| **Current Students** | 15.5% | 9.6% | **-5.9%** | ✅ Major improvement |
 
 ## 🎯 Strategic Implications
 
-### **1. Post-Graduation Retention Gap**
-- **Persistent 7-9% gap**: Graduates consistently underperform students
-- **Critical transition period**: Post-graduation is key intervention point
-- **Stable but concerning**: Graduate retention flat while students improve
+### **1. Post-Graduation Retention Gap Narrowing**
+- **Gap reduced**: From 8.9% (2023) to 6.0% (2024) - graduates catching up
+- **Graduate improvement**: Strong +4.9% retention gain, outpacing students (+2.0%)
+- **Success trajectory**: Post-graduation support strategies showing results
 
-### **2. Positive System-Wide Trends**
-- **Outmigration success**: Both groups showing 5-6% reduction
+### **2. Exceptional System-Wide Improvements**
+- **Outmigration success**: Both groups showing 5%+ reduction
 - **WSA strategies working**: Clear organizational impact across populations
-- **Student acceleration**: +2.6% improvement vs +0.5% for graduates
+- **Graduate acceleration**: +4.9% improvement vs +2.0% for students - graduates outperforming
 
 ### **3. Population Dynamics**
-- **Growing graduate base**: 29.7% → 38.0% of membership
+- **Growing graduate base**: 30.1% → 36.9% of membership
 - **Recent graduate influx**: More WSA registration after program completion
 - **Strategic importance**: Graduates represent significant membership segment
 
@@ -103,14 +103,14 @@ This analysis reveals **significant differences** in retention patterns between 
 ### **Immediate Actions (Graduate Focus)**
 
 1. **Graduate Transition Support Program**
-   - Target the 70% retention rate vs 80% for students
-   - Provide job placement assistance in PEI
-   - Create graduate-specific networking events
+   - Build on the 75.3% retention success vs 81.3% for students
+   - Continue job placement assistance in PEI 
+   - Expand graduate-specific networking events
 
-2. **Bridge the Retention Gap**
-   - Analyze what makes students successful (80.4% retention)
-   - Adapt student support strategies for graduates
-   - Goal: Bring graduate retention to 75%+ (closing gap)
+2. **Continue Closing the Retention Gap**
+   - Analyze what makes students successful (81.3% retention)
+   - Scale successful graduate support strategies further
+   - Goal: Bring graduate retention to 80%+ (near parity with students)
 
 3. **Post-Graduation Intervention**
    - Identify students approaching graduation (6 months before)
@@ -149,13 +149,13 @@ This analysis reveals **significant differences** in retention patterns between 
 ## 🎯 Success Metrics to Track
 
 ### **Graduate Retention KPIs**
-- **Target**: Increase graduate retention from 70.9% to 75%+ 
+- **Target**: Increase graduate retention from 75.3% to 80%+ 
 - **6-month post-graduation retention rate**
 - **1-year post-graduation retention rate**
 - **Employment rate in PEI within 3 months of graduation**
 
 ### **Student Retention Maintenance**
-- **Maintain**: 80.4%+ current student retention rate
+- **Maintain**: 81.3%+ current student retention rate
 - **Monitor**: Continue improvement trajectory
 - **Goal**: Reach 85% retention for both populations
 
